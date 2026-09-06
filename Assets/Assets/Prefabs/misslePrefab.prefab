@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6698113267751231006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6957604847288330048}
+  - component: {fileID: 2159293229074374670}
+  - component: {fileID: 5727013832883915828}
+  - component: {fileID: 5428299025356474944}
+  m_Layer: 0
+  m_Name: misslePrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6957604847288330048
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698113267751231006}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2159293229074374670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698113267751231006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 340312c7ebbfeda4ea8caecef833ad4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Missle
+  ID: 0
+  tag: 
+  acceleration: {x: 0, y: 0, z: 0}
+  targetPoint: {x: 0, y: 0, z: 0}
+  hasTargetPoint: 1
+  isSelected: 0
+  fullSpeed: 1
+  speed: {x: 0, y: 0, z: 0}
+  dv: {x: 0, y: 0, z: 0}
+  da: {x: 0, y: 0, z: 0}
+  maxAcceleration: 150
+  direction: {x: 0, y: 0, z: 0}
+  lineRenderer: {fileID: 0}
+  wayColor: {r: 1, g: 1, b: 1, a: 1}
+  isEnemy: 0
+  isFlagship: 0
+  Ghost: {fileID: 0}
+  ROI: {fileID: 0}
+  targetMO: {fileID: 0}
+  showTargetLine: 1
+  targetLineColor: {r: 1, g: 0, b: 0, a: 1}
+  targetGO: {fileID: 0}
+  explosionSprite: {fileID: 2503992082558401399, guid: df9b70262fbe7984ca4a8c3cb3585e9e, type: 3}
+  gameOverSprite: {fileID: -6899527831451061053, guid: 62f0ca92c94d6e34a9d5bc15c1339513, type: 3}
+  victorySprite: {fileID: 2071275292283007136, guid: f7d1aa49c5a38fe45bf929a6f0349d0f, type: 3}
+  turnAngleThreshold: 5
+  directionHistoryFrames: 3
+  backwardOffsetMultiplier: 0.5
+  lateralOffsetMultiplier: 0.3
+  armingTime: 0.5
+--- !u!114 &5727013832883915828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698113267751231006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6acca53213892a54fbb19d67618979c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RendOrImg
+  sprite: {fileID: 570513375360262070, guid: df7947d053535a644966d180fa5304de, type: 3}
+  iconSize: 2
+  icon: {fileID: 0}
+  img: {fileID: 0}
+  activeImage: 1
+--- !u!114 &5428299025356474944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6698113267751231006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88facc8b0e8c5ad43bc14b6bdbc08cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WayTraicing
+  visibleObject: {fileID: 0}
+  explosionSprite: {fileID: 0}
